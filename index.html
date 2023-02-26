@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>فرم مشخصات دانش آموزی</title>
+    <style>
+        body {
+            direction: rtl;
+        }
+
+        input {
+            padding: 20px;
+            margin: 20px;
+        }
+
+        button {
+            padding: 4px 15px;
+            background-color: #0a58ca;
+            border : 1px solid #9F0053;
+            font-weight: bolder;
+            font-size: larger;
+            color: #CCCCCC;
+            border-radius: 5px;
+        }
+
+    </style>
+</head>
+<body>
+<h1>به فرم ثبت نام دانش آموزان خوش آمدید ، لطفا فرم زیر را کامل کنید :</h1>
+<div style="padding: 20px; border: 1px solid #1C1C1C;">
+    <form action="index.php" enctype="multipart/form-data" method="post">
+        <label for="f_name">نام</label>
+        <input id="f_name" type="text" required name="f_name">
+
+        <label for="l_name">نام خانواداگی</label>
+        <input id="l_name" type="text" required name="l_name">
+
+        <label for="id">کد ملی</label>
+        <input type="text" id="id" name="id" required>
+
+        <label for="father">نام پدر</label>
+        <input type="text" name="father" id="father" required>
+
+        <label for="birthday">تاریخ تولد</label>
+        <input type="text" name="birthday" id="birthday" required>
+
+        <br>
+        <label for="avatar">تصویر</label>
+        <input type="file" id="avatar" name="avatar">
+
+        <br>
+        <button type="submit">ارسال</button>
+    </form>
+</div>
+</body>
+</html>
